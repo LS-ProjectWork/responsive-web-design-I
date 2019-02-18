@@ -85,20 +85,50 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Navigation Styles */
+
+section.nav-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
 .container nav{
 	display: flex;
-	margin: 20px 0;
-	padding: 20px 0;
-	justify-content: space-between;
+	margin: 20px 0px;
+    padding: 20px 0;
+    width: 70%;
+    justify-content: space-between;
 }
 
+@media (max-width: 800px) {
+    .nav-bar{
+        display: flex;
+        flex-direction: column;
+        margin: 20px 0;
+        padding: 20px 0;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid black;
+    }
 
+    .nav-bar .logo-container{
+        order: -1;
+    }
+
+    .nav-bar nav {
+        width: 70%;
+    }
+}
 
 nav a {
 	text-decoration: none;
 	color: gray;
 }
 
+.nav-bar .logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 /* Header Styles */
 
