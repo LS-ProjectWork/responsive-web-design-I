@@ -73,7 +73,7 @@ h1, h2, h3, h4, h5 {
 @media ( max-width: 800px ) {
     .container {
         max-width: 800px;
-        margin: 0 auto;
+        margin: 0 20px;
     }
 }
 
@@ -107,7 +107,6 @@ section.nav-bar {
         padding: 20px 0;
         justify-content: space-between;
         align-items: center;
-        border: 1px solid black;
     }
 
     .nav-bar .logo-container{
@@ -115,7 +114,7 @@ section.nav-bar {
     }
 
     .nav-bar nav {
-        width: 70%;
+        width: 100%;
     }
 }
 
@@ -143,6 +142,12 @@ header img {
 	margin: 20px 5%;
 }
 
+@media (max-width: 800px) {
+    header img {
+        display: none;
+    }
+}
+
 header .text{
 	align-content: center;
 }
@@ -155,12 +160,39 @@ header .text {
 	width: 400px;
 }
 
+@media (max-width: 800px) {
+    header {
+        /* display: flex;
+        align-items: center; */
+        border: 1px solid black;
+    }
+
+    header .text {
+        width: 70%;
+        border: 1px solid black;
+    }
+
+    header h1 {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid black;
+    }
+}
 
 header .text button {
 	display: block;
 	margin: 0 auto;
 	width: 200px;
 	height: 36px;
+}
+
+@media (max-width: 800px) {
+    header button {
+        font-size: 15px;
+        border-radius: 1px;
+    }
 }
 
 .header-fold img {
